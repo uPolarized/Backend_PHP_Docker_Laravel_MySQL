@@ -1,5 +1,10 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
-Route::get('/',function(){ return redirect()->route('categories.index'); });
-Route::resource('categories',CategoryController::class)->except(['show']);
+
+Route::get('/', function () {
+    return view('home');
+});
+
+Route::resource('categories', CategoryController::class)->except(['show']);
