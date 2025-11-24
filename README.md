@@ -4,3 +4,5 @@ Passos:
 1) alterar o .env.example para .env
 2) docker compose up --build
 3) acessar http://localhost:8080
+
+obs: não é necessario rodar manualmente as migrações, o arquivo wait-for-mysql.sh faz automaticamente quando o container sobe.
